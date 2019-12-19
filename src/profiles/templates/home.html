@@ -1,11 +1,10 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Table Of Document</title>
-        <link rel="stylesheet" href='{% static "css/main.css" %}'/>
-    </head>
-    <body>
-        <h1>Hello World</h1>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+            {% block content %}
+            
+            <h1>Hello World</h1>
+            {% endblock %}
+
+            {% block two %}
+            <h1>Another 1</h1>
+            {% endblock %}        
