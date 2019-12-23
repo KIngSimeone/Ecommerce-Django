@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'profiles',
     'contact',
+    'crispy_forms',
 
 ]
 
@@ -138,3 +139,5 @@ if DEBUG:
     STATICFILES_DIR = (
         os.path.join(os.path.dirname(BASE_DIR),"static","static"),
     )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
