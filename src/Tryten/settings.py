@@ -52,6 +52,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'checkout',
+    'stripe',
 
 ]
 
@@ -159,7 +161,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 SITE_ID = 1
 
-LOGIN_URL = 'accounts/login/'
+LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL ='/'
 
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
